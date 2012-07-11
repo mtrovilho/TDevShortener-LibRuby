@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'tdev_shortener'
+code, body = TotenDev::Shortener.shorten( ARGV[0] )
+puts body
