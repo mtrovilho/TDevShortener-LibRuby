@@ -1,6 +1,8 @@
 # TDevShortener
 
-Ruby Gem to shorten a url using TotenDev's URL Shortener
+[![Build Status](https://secure.travis-ci.org/mtrovilho/TDevShortener-LibRuby.png?branch=master)](http://travis-ci.org/mtrovilho/TDevShortener-LibRuby)
+
+Ruby Gem to shorten a url using [TotenDev's URL Shortener](https://github.com/TotenDev/TDevShortener)
 
 ## Installation
 
@@ -18,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
+    require 'tdev_shortener'
     status_code, body = TotenDev::Shortener.shorten(<LONG_URL>)
+    # for a list of returned status codes
+    # see: https://github.com/TotenDev/TDevShortener
 
 ## Contributing
 
