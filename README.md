@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-    code, body = TotenDev::Shortener.shorten(<LONG_URL>)
+    status_code, body = TotenDev::Shortener.shorten(<LONG_URL>)
 
 ## Contributing
 
