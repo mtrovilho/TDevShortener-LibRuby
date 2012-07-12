@@ -1,8 +1,8 @@
-# TDevShortener
-
-[![Build Status](https://secure.travis-ci.org/mtrovilho/TDevShortener-LibRuby.png?branch=master)](http://travis-ci.org/mtrovilho/TDevShortener-LibRuby)
+# TDevShortener - Lib
 
 Ruby Gem to shorten a url using [TotenDev's URL Shortener](https://github.com/TotenDev/TDevShortener)
+
+[![Build Status](https://secure.travis-ci.org/mtrovilho/TDevShortener-LibRuby.png?branch=master)](http://travis-ci.org/mtrovilho/TDevShortener-LibRuby)
 
 ## Installation
 
@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
     require 'tdev_shortener'
-    status_code, body = TotenDev::Shortener.shorten(<LONG_URL>)
+    code, body = TotenDev::Shortener.shorten(<LONG_URL>)
     # for a list of returned status codes
     # see: https://github.com/TotenDev/TDevShortener
 
@@ -32,3 +32,7 @@ Or install it yourself as:
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+##License
+
+[MIT](TDevShortener-LibRuby/raw/master/LICENSE)

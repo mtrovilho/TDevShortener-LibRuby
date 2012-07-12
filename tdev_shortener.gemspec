@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Marcos Trovilho"]
   gem.email         = ["marcos@trovilho.com"]
   gem.summary       = %q{TotenDev's URL shortener wrapper}
-  gem.homepage      = "http://www.tdev.mobi"
+  gem.homepage      = "https://github.com/TotenDev/TDevShortener-LibRuby"
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
