@@ -10,12 +10,8 @@ module TotenDev
     end
     
     def self.short_url( long_url )
-      base_url = 'www.tdev.mobi'
-      post_ws  = '/create/'
-      headers  = { 'Content-Type' => 'application/x-www-form-urlencoded' }
-      req      = Net::HTTP::Post.new( post_ws, headers )
-      req.body = long_url
-      response = Net::HTTP.new( base_url ).start { |http| http.request(req) }
+      base_url = URI( 'http://www.tdev.mobi/create/' )
+      response = Net::HTTP.post_form( base_url, 'link' => long_url )
       response
     end
     
